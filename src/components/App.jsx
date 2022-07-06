@@ -2,17 +2,15 @@ import React, { useState } from 'react';
 //mock data
 import data from "./data.json";
 //components
-import Header from "./ToDo/Header";
-import ToDoList from "./ToDo/ToDoList";
-import Apps from './Apps';
-import Appp from "./Appp"
+import ToDoCard from './ToDoCard';
+import TimerCard from './TimerCard';
 
 function App() {
 
   return (
     <div>
-      <Apps />
-      <Appp />
+      <ToDoCard />
+      <TimerCard />
     </div>
   );
 }

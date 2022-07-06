@@ -17,14 +17,14 @@ body {
   width: 100%;
   height: 300px;
   min-height: 30px;
-  max-width: 400px;
+  max-width: 271px;
   /* min-width: 250px; */
-  background: #9fc0df;
-  margin: auto;
-  width: 50%;
-  /* position: center; */
-  /* right: 150px;
-  bottom: 30px; */
+  background: #d3e6f8;
+  bottom: 30px;
+  left: 40%;
+  position:absolute;
+  /* top: 110px;
+  right:200px; */
   /* background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
   background-size: 25px 25px; */
   border-radius: 20px;
@@ -44,8 +44,10 @@ body {
   /* min-width: 250px; */
   background: #d3e6f8;
   position: absolute;
-  right: 150px;
   bottom: 30px;
+  right: 130px;
+ 
+ 
   /* background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
   background-size: 25px 25px; */
   border-radius: 20px;
@@ -187,5 +189,90 @@ footer p {
   outline: none;
 }
 
-/* Probs delete */
+/* Timer Card new */
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  height:  60vh;
+  width: 100%;
+  display: grid;
+  place-items: 
+  center;
+  background: #f1f1f1;
+  font-family: sans-serif
+}
+
+.clock-container h1 {
+ text-align: center;
+}
+
+.clock {
+  background: #fff;
+  width: 400px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 18px rgba(0,0,0,.09);
+}
+
+.length-controls {
+  display: flex;
+  padding: 1rem;
+}
+
+.length-control {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.length-control-btns {
+  display: flex;
+}
+
+.timer {
+  border: 1px solid #eaeaea;
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#time-left {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#session-length, #break-length {
+  padding: 1rem;
+}
+
+#start_stop, #reset {
+  border:none;
+  padding: 1rem 2rem; 
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+#start_stop{
+  background: #000;
+  color: #fff;
+}
+#reset {
+  margin-left: 1rem;
+}
+
+
+#session-decrement,
+#session-increment,
+#break-decrement,
+#break-increment {
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
 

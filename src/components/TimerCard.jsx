@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 //mock data
 import data from "./data.json";
 //components
-// import Header from "./ToDo/Header";
-import ToDoList from "./ToDo/ToDoList";
-import Apps from './Apps';
 import Header from "./Timer/Header"
+import CountDown from "./Timer/CountDown.jsx"
 
-function Appp() {
+function TimerCard() {
 
   return (
-    <div>
+    <div className='timeCard'>
       <Header />
+      <CountDown />
+
     </div>
   );
 }
 
-export default Appp;
+export default TimerCard;

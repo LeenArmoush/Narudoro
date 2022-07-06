@@ -6,7 +6,7 @@ import Header from "./ToDo/Header";
 import ToDoList from "./ToDo/ToDoList";
 import ToDoForm from './ToDo/ToDoForm';
 
-function Apps() {
+function ToDoCard() {
   
   const [ toDoList, setToDoList ] = useState(data);
 
@@ -39,4 +39,4 @@ function Apps() {
   );
 }
 
-export default Apps;
+export default ToDoCard;
