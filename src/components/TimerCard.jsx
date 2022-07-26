@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 //mock data
 import data from "./data.json";
 //components
-import Header from "./Timer/Header"
-import CountDown from "./Timer/CountDown.jsx"
+import Header from "./Timer/Header.jsx"
+import Count from './Timer/Count.js';
+//import CountDown from "./Timer/CountDown.jsx"
 
 function TimerCard() {
 
   return (
     <div className='timeCard'>
       <Header />
-      <CountDown />
+      <Count />
 
     </div>
   );
